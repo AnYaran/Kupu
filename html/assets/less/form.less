@@ -1,0 +1,150 @@
+input,button{
+    &:focus {
+        outline: none;
+    }
+}
+.form-horizontal {
+    .form-group {
+        margin-bottom: 10px;
+        padding: 0 15px;
+        background-color: @white;
+        border-top: @border-default;
+        border-bottom: @border-default;
+        &:first-child {
+            border-top: 0;
+        }
+    }
+    .form-control {
+        border-bottom: @border-default;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    .control-label {
+        float: left;
+        width: 72px;
+        margin-top: 9px;
+        line-height: 32px;
+        font-size: 14px;
+        color: @gray-dark;
+        em {
+            color: #ff0000;
+        }
+    }
+    .control-label-lg {
+        width: 100px;
+        & + .input-control {
+            margin-left: 100px;
+        }
+    }
+    .input-control {
+        margin-left: 72px;
+        padding-top: 9px;
+    }
+    input[type=text],select {
+        margin-bottom: 9px;
+        padding: 6px 12px;
+        color: @black;
+        font-size: 14px;
+        line-height: normal;
+    }
+    input[type=text] {
+        width: 100%;
+        border: 1px solid @white;
+    }
+    select {
+        padding: 6px 5px;
+        border: @border-default;
+    }
+    input[type=text].input-sm {
+        width: 40%;
+    }
+    input[type=text].input-border {
+        border-bottom: @border-default;
+    }
+    .help-inline {
+        display: inline-block;
+        margin-left: 10px;
+        color: @gray;
+        line-height: 32px;
+        font-size: 14px;
+    }
+    .form-action {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 22px;
+        background-color: @white;
+        border-top: @border-default;
+    }
+    input[type=radio] {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        margin: 8px 5px 0 12px;
+        background: url("../img/radio_unchecked.png") no-repeat;
+        background-size: 100%;
+        &:checked {
+            background-image: url("../img/radio_checked.png");
+            background-size: 100%;
+        }
+    }
+    input[type=checkbox] {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        margin: 8px 5px 0 12px;
+        background: url("../img/icheck_unchecked.png") no-repeat;
+        background-size: 100%;
+        &:checked {
+            background-image: url("../img/icheck_checked.png");
+            background-size: 100%;
+        }
+    }
+    .iradio {
+        display: inline-block;
+        margin-bottom: 9px;
+        line-height: 32px;
+        vertical-align: top;
+    }
+    .icheck {
+        display: block;
+        margin-bottom: 9px;
+        line-height: 32px;
+        vertical-align: top;
+    }
+}
+.upload-box {
+    padding: 15px;
+    background-color: @white;
+    border-bottom: @border-default;
+    .upload-btn {
+        position: relative;
+        span {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: url("../img/upload_btn.png") no-repeat;
+            background-size: 100%;
+        }
+        input[type=file] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            opacity: 0;
+        }
+    }
+}
+.upload-tips {
+    margin: 0;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: @gray;
+    line-height: 17px;
+}
+.upload-sure {
+    margin: 15px;
+}

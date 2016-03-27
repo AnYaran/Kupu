@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+}
+.btn-primary {
+    height: 40px;
+    background-color: #fb0311;
+    border-radius: 4px;
+    border: 0;
+    font-size: 15px;
+    color: @white;
+    line-height: 40px;
+    &:active {
+        background-color: darken(#fb0311,10%);
+    }
+    &.btn-outline {
+        border: @border-default;
+        color: #fb0311;
+        background-color: transparent;
+    }
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}

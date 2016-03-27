@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>加盟申请</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="keywords" content="加盟申请">
+    <meta name="description" content="加盟申请">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link type="text/css" rel="stylesheet" href="assets/css/kupu.min.css">
+</head>
+<body onload="loaded()">
+<!-- Loading -->
+<div id="loading" class="loading">
+    <div class="toast"><div class="toast-text"><span class="toast-icon-loading"></span>载入中</div></div>
+</div>
+<!-- // Loading -->
+<div id="content" class="content">
+    <form class="form-horizontal">
+        <section>
+            <div class="form-group">
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>所在地区</label>
+                    <div class="input-control">
+                        <select>
+                            <option>北京</option>
+                        </select>
+                        <select>
+                            <option>北京市</option>
+                        </select>
+                        <select>
+                            <option>西城区</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <label class="control-label">地段编号</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label">邮编</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>街道名称</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label">邮编</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>业主姓名</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>身份证号</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>手机号码</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>街道名称</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label">电子邮箱</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>店铺名称</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>店铺数量</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label"><em>*</em>日均销售</label>
+                    <div class="input-control">
+                        <input type="text" class="input-sm">
+                        <span class="help-inline">元/店/天</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-action">
+                <button class="btn btn-primary btn-block" type="button">下一步</button>
+            </div>
+        </section>
+        <section>
+            <div class="form-group">
+                <div class="form-control">
+                    <label class="control-label control-label-lg"><em>*</em>店铺房屋性质</label>
+                    <div class="input-control">
+                        <label class="iradio" for="shopHouseNature_0"><input type="radio" name="shopHouseNature" id="shopHouseNature_0" checked>自有</label>
+                        <label class="iradio" for="shopHouseNature_1"><input type="radio" name="shopHouseNature" id="shopHouseNature_1">租用</label>
+                        <label class="iradio" for="shopHouseNature_2"><input type="radio" name="shopHouseNature" id="shopHouseNature_2">公用</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label control-label-lg">房屋租赁期限</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label control-label-lg">店员人数</label>
+                    <div class="input-control">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label control-label-lg"><em>*</em>店铺面积</label>
+                    <div class="input-control">
+                        <label class="iradio" for="shopArea_0"><input type="radio" name="shopArea" id="shopArea_0" checked>100²以下</label>
+                        <label class="iradio" for="shopArea_1"><input type="radio" name="shopArea" id="shopArea_1">100㎡以上</label>
+                        <label class="iradio" for="shopArea_2"><input type="radio" name="shopArea" id="shopArea_2">500㎡以上</label>
+                        <label class="iradio" for="shopArea_3"><input type="radio" name="shopArea" id="shopArea_3">1000㎡以上</label>
+                        <label class="iradio" for="shopArea_4"><input type="radio" name="shopArea" id="shopArea_4">5000㎡以上</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <label class="control-label control-label-lg"><em>*</em>店铺性质</label>
+                    <div class="input-control">
+                        <label class="iradio" for="shopNature_0"><input type="radio" name="shopNature" id="shopNature_0" checked>私营</label>
+                        <label class="iradio" for="shopNature_1"><input type="radio" name="shopNature" id="shopNature_1">合资</label>
+                        <label class="iradio" for="shopNature_2"><input type="radio" name="shopNature" id="shopNature_2">国有</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label control-label-lg"><em>*</em>店铺面积</label>
+                    <div class="input-control">
+                        <label class="iradio" for="shopType_0"><input type="radio" name="shopType" id="shopType_0" checked>单体超市</label>
+                        <label class="iradio" for="shopType_1"><input type="radio" name="shopType" id="shopType_1">连锁超市</label>
+                        <label class="iradio" for="shopType_2"><input type="radio" name="shopType" id="shopType_2">食品批发商</label>
+                        <label class="iradio" for="shopType_3"><input type="radio" name="shopType" id="shopType_3">母婴用品店</label>
+                        <label class="iradio" for="shopType_4"><input type="radio" name="shopType" id="shopType_4">生鲜蔬果店</label>
+                        <label class="iradio" for="shopType_5"><input type="radio" name="shopType" id="shopType_5">化妆洗化店</label>
+                        <label class="iradio" for="shopType_6"><input type="radio" name="shopType" id="shopType_6">餐饮店</label>
+                        <label class="iradio" for="shopType_7"><input type="radio" name="shopType" id="shopType_7">家用电器店</label><br>
+                        <label class="iradio" for="shopType_8"><input type="radio" name="shopType" id="shopType_8">其他</label>
+                        <input type="text" class="input-border input-sm ml10">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label control-label-lg"><em>*</em>店铺面积</label>
+                    <div class="input-control">
+                        <label class="icheck" for="busiLicense_0"><input type="checkbox" name="busiLicense" id="busiLicense_0" checked>个体工商户营业执照</label>
+                        <label class="icheck" for="busiLicense_1"><input type="checkbox" name="busiLicense" id="busiLicense_1">工商户营业执照</label>
+                        <label class="icheck" for="busiLicense_2"><input type="checkbox" name="busiLicense" id="busiLicense_2">地方税务登记证</label>
+                        <label class="icheck" for="busiLicense_3"><input type="checkbox" name="busiLicense" id="busiLicense_3">卫生许可证</label>
+                        <label class="icheck" for="busiLicense_4"><input type="checkbox" name="busiLicense" id="busiLicense_4">烟草专卖许可证</label>
+                        <label class="icheck" for="busiLicense_5"><input type="checkbox" name="busiLicense" id="busiLicense_5">酒类零售许可证</label>
+                        <label class="icheck" for="busiLicense_6"><input type="checkbox" name="busiLicense" id="busiLicense_6">医疗器械备案表</label>
+                        <label class="icheck" for="busiLicense_7"><input type="checkbox" name="busiLicense" id="busiLicense_7">出版物发行许可证</label><br>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label control-label-lg"><em>*</em>组织机构代码</label>
+                    <div class="input-control">
+                        <label class="iradio" for="shopNature_0"><input type="radio" name="shopNature" id="shopNature_0" checked><input type="text" class="input-sm input-border"></label>
+                        <label class="iradio" for="shopNature_1"><input type="radio" name="shopNature" id="shopNature_1"><button type="button" class="btn btn-outline btn-primary">上传证件图片</button></label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label class="control-label control-label-lg"><em>*</em>店铺性质</label>
+                    <div class="input-control">
+                        <label class="iradio" for="joinType_0"><input type="radio" name="joinType" id="joinType_0" checked>自愿加盟</label>
+                        <label class="iradio" for="joinType_1"><input type="radio" name="joinType" id="joinType_1">合作加盟</label>
+                        <label class="iradio" for="joinType_2"><input type="radio" name="joinType" id="joinType_2">特许加盟</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-action">
+                <button class="btn btn-primary btn-block" type="button">立即加盟申请</button>
+            </div>
+        </section>
+        <section>
+            <div class="upload-box">
+                <div class="upload-btn">
+                    <span></span>
+                    <input type="file">
+                </div>
+            </div>
+            <p class="upload-tips">注：上传相关证照扫描件或照片，只支持jpg、png、pdf格式文件，最多上传5张图</p>
+            <div class="upload-sure">
+                <button type="button" class="btn btn-primary btn-block">确定</button>
+            </div>
+        </section>
+    </form>
+</div>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script>
+    function loaded() {
+        // 页面加载完 移除loading
+        $('#loading').remove();
+    }
+</script>
+</body>
+</html>

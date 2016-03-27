@@ -1,0 +1,7 @@
+.btn {
+  display: inline-block;
+}
+.btn-primary {
+  background-color: #fb0311;
+  border-radius: 4px;
+}
